@@ -1,16 +1,14 @@
 const randomNumber = min => max =>
   Math.floor(Math.random() * (1 + max - min)) + min
 
-const optionsInput = ({ min, max }) => randomNumber(min)(max)
+const withOptions = ({ min, max }) => randomNumber(min)(max)
 
-const random = (state = {}) => ({
-  between: min => random({ ...state, min }),
-  from: min => random({ ...state, min }),
-  and: max => optionsInput({ ...state, max }),
-  to: max => optionsInput({ ...state, max })
+const between = min => ({
+  and: max => randomNumber(min + 1)(max - 1)
 })
 
-export default Object.assign(
-  options => optionsInput(options),
-  random()
-)
+const from = min => ({
+  to: max => randomNumber(min)(max)
+})
+
+export default Object.assign(withOptions, { between, from })
