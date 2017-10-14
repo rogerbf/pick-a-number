@@ -35,5 +35,14 @@
     "README.md",
     "source",
     "build"
-  ]
+  ],
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogerbf/pick-a-number.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rogerbf/pick-a-number/issues"
+  },
+  "homepage": "https://github.com/rogerbf/pick-a-number#readme"
 }
