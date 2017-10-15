@@ -10,7 +10,12 @@
     "lint": "eslint source",
     "format": "prettier-standard \"source/**/*.js\""
   },
-  "keywords": [],
+  "keywords": [
+    "random",
+    "number",
+    "random number",
+    "generator"
+  ],
   "author": "rogerbf <roger@bergfa.lk> (http://bergfa.lk/)",
   "license": "MIT",
   "devDependencies": {
