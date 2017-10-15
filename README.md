@@ -1,6 +1,6 @@
 # pick-a-number
 
-Get a random number. This module uses `Math.random()`.
+Get a random number. `Math.random()` is used for random number generation.
 
 ```javascript
 const randomNumber = require(`pick-a-number`)
