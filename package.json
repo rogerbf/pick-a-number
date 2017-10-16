@@ -1,6 +1,6 @@
 {
   "name": "pick-a-number",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "get a random number",
   "main": "build/index.js",
   "scripts": {
